@@ -14,7 +14,7 @@ function add(A,B){
     let b = + B.charAt(BL - i)
 
     let t = carry + a + b
-    carry = t/10 |0
+    carry = t/10 | 0
     t %= 10
 
     sum = (i === ML && carry) ? carry*10 + t + sum : t + sum
